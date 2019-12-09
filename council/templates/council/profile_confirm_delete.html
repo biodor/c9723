@@ -1,0 +1,14 @@
+{% extends 'council/base.html' %}
+{% block main %}
+<h1>Contact Delete?</h1>
+<form  method="post">
+{% csrf_token %}
+Are you sure you want to delete this Membership? 
+<p><h4>Membership Number:<b> {{ profile.membership_number }}</b></h4></p>
+<p><h4>Membership Name: <b>{{ profile.first_name }} {{ profile.last_name }}</b></h4></p>
+
+<br>
+<button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-send"></i>&nbsp;Submit</button>
+<a class="btn btn-outline-primary  btn-sm" href="{% url 'profile_list' %}">Cancel</a>
+</form>
+{% endblock main %}

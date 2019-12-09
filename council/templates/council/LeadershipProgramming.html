@@ -1,0 +1,76 @@
+{% extends 'council/base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">MEMBERSHIP RESOURCES: GUIDE</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                          
+                                   
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="left">
+               <h3><b>MEMBERSHIP RESOURCES: GUIDE</b></h3><br>
+<div class="form-row">
+<div class="form-group col-md-12 mb-0">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="{% url 'LeadershipResource' %}"><button type="button" class="btn btn-primary">Leadership</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+     <a href="{% url 'LeadershipRecruitment' %}"><button type="button" class="btn btn-primary">Recruitment</button></a>
+
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'LeadershipProgramming' %}"><button type="button" class="btn btn-info">Programming</button></a>
+  </div>
+</div>
+</div></div>
+
+            </div>    
+            </div> 
+
+        <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+            	<br><h3><b>Programming</b></h3>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">
+<p>This section contains proven methods to guide your council in growing membership through meaningful, charitable programs that define the Knights of Columbus as the organization that brings the love of Christ to those in need and supports family values and a culture of life.</p>
+<p><a href="http://kofc.org/un/en/programs/index.html">Faith in Action HUB</a></p>
+<p><a href="{% static 'council/pdf/10590-faith-in-action-guidebook.pdf' %}" target="_blank">Guidebook</a></p>
+<p><a href="{% static 'council/pdf/faith-in-action-faq.pdf' %}" target="_blank">FAQ</a></p>
+<p><a href="{% static 'council/pdf/fia-minimum-requirements.pdf' %}" target="_blank">Minimum Requirements</a></p>
+<p><a href="https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fevent.on24.com%2FeventRegistration%2FEventLobbyServlet%3Ftarget%3Dreg20.jsp%26referrer%3Dhttps%253A%252F%252Fwww.kofc.org%252Fen%252Fprograms%252Findex.html%26eventid%3D1681218%26sessionid%3D1%26key%3D66936287C5307E2745AB6796F874E0CF%26regTag%3D%26sourcepage%3Dregister&amp;data=02%7C01%7CTyler.Lomnitzer%40Kofc.Org%7Cbc4b7e4ef938404a591f08d64affac16%7C8a4b69f88bb74be59eda6c40a157248c%7C0%7C0%7C636778859318292743&amp;sdata=jFh9cQw2dWq5yqyRet2pcVOmBb2h7FzCzcsYNESLQ9Q%3D&amp;reserved=0" target="_blank">Faith in Action Webinar</a></p>
+<p><a href="http://kofc.org/un/en/forms/programs/10650%206-18%20Youth%20%26%20Faith%20in%20Action.pdf" target="_blank">Youth &amp; Faith in Action</a></p>
+<p><a href="http://kofc.org/un/en/members/resources/forms/council.html">Forms</a></p>
+<p><a href="http://kofc.org/un/en/programs/life/index.html">Life</a></p>
+<p><a href="http://kofc.org/un/en/programs/faith/index.html">Faith</a></p>
+<p><a href="http://kofc.org/un/en/programs/community/index.html">Community</a></p>
+<p><a href="http://kofc.org/un/en/programs/family/index.html">Family</a></p>            	
+            </div>
+
+              <div class="form-group col-md-6 mb-0">
+              <img src="{% static 'council/images/member-resources-programming-downstream.jpg' %}" style="width:100%;" />
+            </div>
+        </div>
+
+<br>
+<!-- Collapse -->
+
+       
+                         </div>
+                            
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

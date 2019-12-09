@@ -1,0 +1,97 @@
+{% extends 'council/base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">COMMUNITY</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                          
+                                   
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="right">
+               
+            </div>    
+            </div>                  
+        <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+            	<img src="{% static 'council/images/community-disaster.jpg' %}" style="width:100%;" />
+        	</div>
+            <div class="form-group col-md-12 mb-0">
+            	<br><h3><b>DISASTER PREPAREDNESS</b></h3>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            	<img src="{% static 'council/images/community-relieft.jpg' %}" style="width:100%;" />
+            </div>
+            <div class="form-group col-md-8 mb-0">
+            	<b>A Higher Purpose</b>
+				Prepare your community before disaster strikes. Councils will engage their parish and community in disaster preparedness exercises by organizing trainings, fundraisers and various awareness activities.<br><br>
+
+				<b>Overview</b>
+				Communities can be brought to a halt when disaster occurs – from large natural disasters to local crises. As community leaders, Knights of Columbus will ensure that their members, families and parish communities are prepared through a campaign that promotes planning and education. This program motivates councils to take a holistic approach to emergency situations by promoting readiness in times of crisis, assessing response capabilities, and learning how to properly respond well ahead of a disaster. Councils will also fundraise and teach (where able) in anticipation of larger efforts to assist brothers in need.
+            </div>
+        </div>
+
+<br>
+<!-- Collapse -->
+<div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="{% url 'community' %}"><button type="button" class="btn btn-info">Action Steps</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+     <a href="{% url 'CommunityDisasterPreparation' %}"><button type="button" class="btn btn-primary">Council Disaster Preparation</button></a>
+
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityRespondent' %}"><button type="button" class="btn btn-primary">Respond to a Disaster</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityIndividualResponse' %}"><button type="button" class="btn btn-primary">Individual Response</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityResources' %}"><button type="button" class="btn btn-primary">Resources</button></a>
+  </div>
+</div>
+</div></div>
+<div class="form-row">
+<div class="form-group col-md-12 mb-0">
+                <p><h4><b>Action Steps</b></h4>
+
+<ol type = "1"><li>Contact your jurisdiction disaster coordinator to inquire about the procedures in place in your jurisdiction in a disaster situation.
+</li><li>Preparation – start each fraternal year with disaster preparation activities.
+    <ul type="disc"><li>Meet with your parish priest on an annual basis to identify specific needs of the parish and discuss how the Knights can help
+</li><li>Communicate with the jurisdiction leadership. Discuss things the council can do to be prepared in the case of a disaster from hosting a fundraiser to raising awareness for relief efforts, making facilities available, and preparedness education.
+</li><li>Institute and maintain a disaster communication phone tree to ensure council leadership can reach all council members by phone. Update information regularly.
+</li><li>Maintain contact lists of the parish's vulnerable community members (the elderly, disabled and widow(er)s) to ensure that they are safe prior to a disaster or after a disaster has struck</li></ul>
+</li><li>Working with local law enforcement, fire departments and/or the Red Cross, conduct an event to educate the community on disaster preparedness and what to do before, during and after a disaster situation.
+</li><li>Prior to the event, use the sample press release as a model to create and distribute a tailored release to local media.
+</li><li>Build public interest for the event! Promote the event in your parish and larger community through a variety of efforts:
+</li><ul type="disc"><li>Prominently display promotional posters (which can be ordered through Supplies Online)
+</li><li>Bulletin announcements
+</li><li>Pulpit announcements
+</li><li>Posting on your council and parish website / social media pages</li></ul>
+<li>On the day of the event, wear Knights of Columbus-branded apparel and have the council membership director set up a table with brochures and membership documents (including Prospect Cards #921A). Do not forget that this event is a recruiting opportunity!
+</li><li>Enlist a fellow Knight or community member to photograph the event.
+</li><li>To gain credit for your program, complete the associated reporting forms and submit them to the Supreme Council Department of Fraternal Mission. Remember to retain copies for your council records.
+</li><ul type="disc"><li>At the end of the fraternal year, complete the Fraternal Programs Report Form (#10784)
+</li><li>At the end of the fraternal year, complete your Columbian Award Application (#SP-7)</li></ul></ol>
+            </div>
+       
+                          </div></div>
+                            
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

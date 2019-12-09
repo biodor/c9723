@@ -1,0 +1,126 @@
+{% extends 'council/base.html' %}
+
+
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Member Details</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+
+                                    {% csrf_token %} 
+         <div class="form-row">   
+            <div class="form-group col-md-12 mb-0" align="right">
+                <img class="rounded-circle article-img" src="{{ profile.image.url }}"><br>
+            </div>
+           </div>                       
+
+         <div class="form-row">
+            <div class="form-group col-md-2 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.membership_number }}" disabled="True" /><br>
+            <h6>Membership Number</h6>
+            </div>
+            <div class="form-group col-md-2 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.council_number }}" disabled="True"/><br>
+            <h6>Council Number</h6>
+            </div>
+            <div class="form-group col-md-8 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.council_name }}" disabled="True"/><br>
+            <h6>Council Name</h6>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.first_name }}" disabled="True"/><br>
+            <h6>First Name</h6>
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.middle_name }}" disabled="True"/><br>
+            <h6>Middle Name</h6>
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.last_name }}" disabled="True"/><br>
+            <h6>Last Name</h6>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">    
+            <input type="text" style="width:100%;" value = "{{ profile.street_address }}" disabled="True"/><br>
+            <h6>Street Address</h6>
+            </div>
+            <div class="form-group col-md-6 mb-0">  
+            <input type="text" style="width:100%;" value = "{{ profile.City_state_zip }}"/><br>
+            <h6>City/State/Zip code</h6>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">    
+            <input type="text" style="width:100%;" value = "{{ profile.birth_date|date:"F d, Y" }}" disabled="True"/><br>
+            <h6>Birth Date</h6>
+            </div>
+            <div class="form-group col-md-4 mb-0">  
+            <input type="text" style="width:100%;" value = "{{ profile.email }}" disabled="True"/><br>
+            <h6>E-mail Address</h6>
+            </div>
+            <div class="form-group col-md-4 mb-0">  
+            <input type="text" style="width:100%;" value = "{{ profile.phone }}" disabled="True"/><br>
+            <h6>Cellphone number</h6>
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.first_degree_date|date:"F d, Y" }}" disabled="True"/><br>
+            <h6>First Degree Date</h6>
+            </div>
+            <div class="form-group col-md-3 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.second_degree_date|date:"F d, Y" }}" disabled="True"/><br>
+            <h6>Second Degree Date</h6>
+            </div>
+            <div class="form-group col-md-3 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.third_degree_date|date:"F d, Y" }}" disabled="True"/><br>
+            <h6>Third Degree Date</h6>
+            </div>
+            <div class="form-group col-md-3 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.assembly_number }}" disabled="True"/><br>
+            <h6>Assembly Number</h6>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.membership_type }}" disabled="True"/><br>
+            <h6>Membership Type</h6>
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.membership_class }}" disabled="True"/><br>
+            <h6>Membership Class</h6>
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            <input type="text" style="width:100%;" value = "{{ profile.reentry_date|date:"F d, Y" }}" disabled="True"/><br>
+            <h6>Re-entry Date</h6>
+            </div>
+        </div>
+
+        <div class="dropdown-divider"></div>
+                                   
+         <a class="btn btn-outline-primary" href="{% url 'profile_list_16314' %}">Close</a>
+                                   
+                          
+                       
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main %}
+

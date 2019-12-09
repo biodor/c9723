@@ -1,0 +1,119 @@
+{% extends 'council/base.html' %}
+{% load crispy_forms_tags %}
+
+{% include "floppyforms/input.html" %}
+{% load humanize %}
+{% block breadcrumb %}
+  <li class="breadcrumb-item active" style="background-color:#d42222;">Helpdesk</li>
+{% endblock %}
+
+
+{% block main %}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Member Update Form</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <form method="POST" id="tablekofc" enctype="multipart/form-data">
+                                    {% csrf_token %} 
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="right">
+                <img class="rounded-circle article-img" src="{{ profile.image.url }}">
+            </div>    
+            </div>                  
+         <div class="form-row">
+            <div class="form-group col-md-2 mb-0">
+            {{ form.membership_number|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-2 mb-0">
+            {{ form.council_number|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-8 mb-0">
+            {{ form.council_name|as_crispy_field }}
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            {{ form.first_name|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            {{ form.middle_name|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            {{ form.last_name|as_crispy_field }}
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">    
+            {{ form.street_address|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-6 mb-0">  
+            {{ form.City_state_zip|as_crispy_field }}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">    
+            {{ form.birth_date|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">  
+            {{ form.email|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">  
+            {{ form.phone|as_crispy_field }}
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3 mb-0">
+            {{ form.first_degree_date|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-3 mb-0">
+            {{ form.second_degree_date|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-3 mb-0">
+            {{ form.third_degree_date|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-3 mb-0">
+            {{ form.assembly_number|as_crispy_field }}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            {{ form.membership_type|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            {{ form.membership_class|as_crispy_field }}
+            </div>
+            <div class="form-group col-md-4 mb-0">
+            {{ form.reentry_date|as_crispy_field }}
+            </div>
+        </div>
+        <div class="dropdown-divider"></div>
+
+                    <div class="form-group col-md-12 mb-0">
+               {{ form.image|as_crispy_field }}
+            </div>
+<br>
+        <div class="dropdown-divider"></div>
+                                   
+         <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-send"></i>&nbsp;Submit</button>
+                  <a class="btn btn-outline-primary  btn-sm" href="{% url 'profile_list_15167' %}">Close</a>
+                                   
+                          
+                            
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main %}

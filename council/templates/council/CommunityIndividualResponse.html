@@ -1,0 +1,87 @@
+{% extends 'council/base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Community</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                          
+                                   
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="right">
+               
+            </div>    
+            </div>                  
+        <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+            	<img src="{% static 'council/images/community-disaster.jpg' %}" style="width:100%;" />
+        	</div>
+            <div class="form-group col-md-12 mb-0">
+            	<br><h3><b>DISASTER PREPAREDNESS</b></h3>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            	<img src="{% static 'council/images/community-relieft.jpg' %}" style="width:100%;" />
+            </div>
+            <div class="form-group col-md-8 mb-0">
+            	<b>A Higher Purpose</b>
+				Prepare your community before disaster strikes. Councils will engage their parish and community in disaster preparedness exercises by organizing trainings, fundraisers and various awareness activities.<br><br>
+
+				<b>Overview</b>
+				Communities can be brought to a halt when disaster occurs – from large natural disasters to local crises. As community leaders, Knights of Columbus will ensure that their members, families and parish communities are prepared through a campaign that promotes planning and education. This program motivates councils to take a holistic approach to emergency situations by promoting readiness in times of crisis, assessing response capabilities, and learning how to properly respond well ahead of a disaster. Councils will also fundraise and teach (where able) in anticipation of larger efforts to assist brothers in need.
+            </div>
+        </div>
+
+<br>
+<!-- Collapse -->
+<div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="{% url 'community' %}"><button type="button" class="btn btn-primary">Action Steps</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <a href="{% url 'CommunityDisasterPreparation' %}"><button type="button" class="btn btn-primary">Council Disaster Preparation</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityRespondent' %}"><button type="button" class="btn btn-primary">Respond to a Disaster</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityIndividualResponse' %}"><button type="button" class="btn btn-info">Individual Response</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityResources' %}"><button type="button" class="btn btn-primary">Resources</button></a>
+  </div>
+</div>
+</div></div>
+<div class="form-row">
+<div class="form-group col-md-12 mb-0">
+
+<p><h4><b>Individual Response</b></h4>
+There are steps you can take to help ensure the safety of yourself, your family and community before and after a disaster. They include:
+
+<ol type = "1"><li>Staying aware of local media weather reports and your local evacuation routes.</li>
+<li>Connecting with <a href="/un/en/insurance/find-a-council.html">YOUR LOCAL COUNCIL</a> and parish regarding disaster safety, awareness training and volunteer efforts.</li>
+<li>Praying for your family members and others in the path of disaster. <a href="/un/en/news/releases/praying-for-hurricane-victims.html">THESE PRAYERS</a> are timeless, and can be said at anytime. Offered together, our prayers can be stronger than the most powerful storm.</li>
+<li>Giving what you can to <a kc-site-link="" secure="" href="/un/en/secure/charities/disaster-relief.html">DISASTER RELIEF</a>. Even small contributions make a big difference. One hundred percent of the proceeds will go directly to relief efforts.</li>
+<li>Spreading the word. The flyers below are specially designed to be printed and distributed around your community. You can also post them on personal and council social media accounts. Share our <a href="https://www.youtube.com/playlist?list=PL7520C86CB9E21D1C" target="_blank">YouTube videos</a>. Sharing these links will cost no more than a few seconds of your time, but they can make all the difference in the life of another.</li></ol>
+Important Note: During and in the immediate aftermath of a disaster, never act in the context of a council beyond ensuring members of the council and parish community are safe unless assistance has been requested by emergency professionals, your parish, community disaster coordinator or through your state council leadership.
+</p>
+            </div>
+       
+                          </div></div>
+                            
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

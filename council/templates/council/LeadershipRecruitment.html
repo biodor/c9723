@@ -1,0 +1,79 @@
+{% extends 'council/base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">MEMBERSHIP RESOURCES: GUIDE</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                          
+                                   
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="left">
+               <h3><b>MEMBERSHIP RESOURCES: GUIDE</b></h3><br>
+<div class="form-row">
+<div class="form-group col-md-12 mb-0">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="{% url 'LeadershipResource' %}"><button type="button" class="btn btn-primary">Leadership</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+     <a href="{% url 'LeadershipRecruitment' %}"><button type="button" class="btn btn-info">Recruitment</button></a>
+
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'LeadershipProgramming' %}"><button type="button" class="btn btn-primary">Programming</button></a>
+  </div>
+</div>
+</div></div>
+
+            </div>    
+            </div> 
+
+        <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+            	<br><h3><b>Recruitment</b></h3>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">
+<p>This section contains valuable information for success in increasing membership while at the same time, allowing new members to be a part of the faith and sound principles which unite all members of the Knights of Columbus.</p>
+<p><a class="read-more" href="{% static 'council/pdf/membership-recruit-manual10237.pdf' %}" target="_blank">Membership Recruitment and Retention Manual</a> (#10237)</p>
+<p><a class="read-more" href="{% static 'council/pdf/ten-keys-membership-recruitment10233.pdf' %}" target="_blank">10 Keys to Membership Recruiting Success</a> (#10233)</p>
+<!--<p><a href="#" target="_blank">**Supreme Knight on Membership 2015</a></p>--><!--<p><a href="#" target="_blank">**Membership Recruitment Presentation</a></p>-->
+<p><a class="read-more" href="{% static 'council/pdf/why-you-should-become-knight10100.pdf' %}" target="_blank">Why You Should Become a Knight</a> (#10100)</p>
+<p><a class="read-more" href="{% static 'council/pdf/twenty-four-hours-change-life-10099.pdf' %}" target="_blank">Twenty-four Hours Can Change Your Life</a> (#10099)</p>
+<p><a class="read-more" href="{% static 'council/pdf/charity-that-evangelizes4976.pdf' %}" target="_blank">A Charity that Evangelizes</a> (#4976)</p>
+<p><a class="read-more" href="{% static 'council/pdf/college-councils-brochure4606.pdf' %}" target="_blank">College Council Promotional Flyer</a> (#4606)</p>
+<!--<p><a href="#" target="_blank">**Overview of the Knights of Columbus</a> (#4495)</p>-->
+<p><a class="read-more" href="{% static 'council/pdf/these-men-call-knights937.pdf' %}" target="_blank">These Men They Call Knights</a> (#937)</p>
+<p>Videos</p>
+<div class="img_l caption half-viewport"><a title="The Power of One to Recruit" href="{% static 'council/video/Knights of Columbus.ts' %}" kc-modal-video=""><img src="{% static 'council/images/VideoIcon.png' %}" alt="The Power of One" />&nbsp;The Power of One<br /><img class="img_l" src="{% static 'council/images/powerofone-280x158.jpg' %}" alt="Recruit" /></a>&nbsp;<a title="The Power of One" class="read-more" href="{% static 'council/video/Knights of Columbus.ts' %}" rel="gb_page_center[640,360];"></a></div>
+<p class="clear">&nbsp;</p>
+<div class="img_l caption half-viewport"><a title="Supreme Knight Mid-Year Meeting Speech" class="read-more" href="{% static 'council/video/Membership Resources Guide.ts' %}" kc-modal-video=""><img src="{% static 'council/images/VideoIcon.png' %}" alt="An Invitation" />&nbsp;&ldquo;An Invitation&rdquo;<br /><img src="{% static 'council/images/joinus.jpg' %}" alt="Recruit" /></a></div>
+<p>&nbsp;</p>            	
+            </div>
+
+              <div class="form-group col-md-6 mb-0">
+              <img src="{% static 'council/images/member-resources-recruitment-downstream.jpg' %}" style="width:100%;" />
+            </div>
+        </div>
+
+<br>
+<!-- Collapse -->
+
+       
+                         </div>
+                            
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

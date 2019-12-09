@@ -1,0 +1,75 @@
+{% extends 'council/base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">MEMBERSHIP RESOURCES: GUIDE</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                          
+                                   
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="left">
+               <h3><b>MEMBERSHIP RESOURCES: GUIDE</b></h3><br>
+<div class="form-row">
+<div class="form-group col-md-12 mb-0">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="{% url 'LeadershipResource' %}"><button type="button" class="btn btn-info">Leadership</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+     <a href="{% url 'LeadershipRecruitment' %}"><button type="button" class="btn btn-primary">Recruitment</button></a>
+
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'LeadershipProgramming' %}"><button type="button" class="btn btn-primary">Programming</button></a>
+  </div>
+</div>
+</div></div>
+
+            </div>    
+            </div> 
+
+        <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+            	<br><h3><b>Leadership</b></h3>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6 mb-0">
+<p>Use these documents as tools to enhance your knowledge as a fraternal leader in the Knights of Columbus. The instructions, rules and advice provided in these resources will help you in setting an example of charity, unity and fraternity.</p>
+<p><a class="read-more" href="{% static 'council/pdf/grandknight.pdf' %}" target="_blank">Grand Knight's Guide</a> (#5085)</p>
+<p><a class="read-more" href="{% static 'council/pdf/district-deputy5087.pdf' %}" target="_blank">District Deputy's Guide</a>&nbsp;(#5087)</p>
+<p><a class="read-more" href="{% static 'council/pdf/financial-secretary5089.pdf' %}" target="_blank">Financial Secretary's Guide</a>&nbsp;(#5089)</p>
+<p><a class="read-more" href="{% static 'council/pdf/chaplain945.pdf' %}" target="_blank">Chaplain's Handbook</a> (#945)</p>
+<p><a class="read-more" href="{% static 'council/pdf/fraternal-leader-success-planner5033.pdf' %}" target="_blank">Fraternal Leader Success Planner</a> (#5033)</p>
+<p><a class="read-more" href="{% static 'council/pdf/method-conducting-council-meetings10318.pdf' %}" target="_blank">Method of Conducting Council Meetings</a> (#10318)</p>
+<p><a class="read-more" href="{% static 'council/pdf/protocol-booklet1612.pdf' %}" target="_blank">Protocol Handbook</a>&nbsp;(#1612)</p>
+<p><a class="read-more" href="{% static 'council/pdf/financial-secretary-flyer10238.pdf' %}" target="_blank">Summary of FS's Responsibilities</a> (#10238)</p>
+<p><a class="read-more" href="{% static 'council/pdf/charter-const-laws30.pdf' %}" target="_blank">Charter, Constitution and Laws of the Knights of Columbus</a> (#30)</p>
+<p><a class="read-more" href="{% static 'council/pdf/leadership-resources5093.pdf' %}" target="_blank">Leadership Resources</a> (#5093)</p>            	
+            </div>
+
+              <div class="form-group col-md-6 mb-0">
+              <img src="{% static 'council/images/member-resources-leadership-downstream.jpg' %}" style="width:100%;" />
+            </div>
+        </div>
+
+<br>
+<!-- Collapse -->
+
+       
+                         </div>
+                            
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

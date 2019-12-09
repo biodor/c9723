@@ -1,0 +1,93 @@
+{% extends 'council/base.html' %}
+{% load static %}
+{% block main %}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="content-section">
+            <div class="table-responsive">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Community</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                          
+                                   
+                       <div class="form-row">
+                      <div class="form-group col-md-12 mb-0" align="right">
+               
+            </div>    
+            </div>                  
+        <div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+            	<img src="{% static 'council/images/community-disaster.jpg' %}" style="width:100%;" />
+        	</div>
+            <div class="form-group col-md-12 mb-0">
+            	<br><h3><b>DISASTER PREPAREDNESS</b></h3>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4 mb-0">
+            	<img src="{% static 'council/images/community-relieft.jpg' %}" style="width:100%;" />
+            </div>
+            <div class="form-group col-md-8 mb-0">
+            	<b>A Higher Purpose</b>
+				Prepare your community before disaster strikes. Councils will engage their parish and community in disaster preparedness exercises by organizing trainings, fundraisers and various awareness activities.<br><br>
+
+				<b>Overview</b>
+				Communities can be brought to a halt when disaster occurs – from large natural disasters to local crises. As community leaders, Knights of Columbus will ensure that their members, families and parish communities are prepared through a campaign that promotes planning and education. This program motivates councils to take a holistic approach to emergency situations by promoting readiness in times of crisis, assessing response capabilities, and learning how to properly respond well ahead of a disaster. Councils will also fundraise and teach (where able) in anticipation of larger efforts to assist brothers in need.
+            </div>
+        </div>
+
+<br>
+<!-- Collapse -->
+<div class="form-row">
+            <div class="form-group col-md-12 mb-0">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <a href="{% url 'community' %}"><button type="button" class="btn btn-primary">Action Steps</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <a href="{% url 'CommunityDisasterPreparation' %}"><button type="button" class="btn btn-info">Council Disaster Preparation</button></a>
+
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityRespondent' %}"><button type="button" class="btn btn-primary">Respond to a Disaster</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityIndividualResponse' %}"><button type="button" class="btn btn-primary">Individual Response</button></a>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Third group">
+    <a href="{% url 'CommunityResources' %}"><button type="button" class="btn btn-primary">Resources</button></a>
+  </div>
+</div>
+</div></div>
+<div class="form-row">
+<div class="form-group col-md-12 mb-0">
+
+<p><h4><b>Council Disaster Preparation</b></h4>
+Organizing and maintaining a council-level action plan is extremely important to the success of any disaster response efforts within the local community and at the jurisdiction level. There are many steps that a council should take to be prepared in the case of a disaster, including:
+
+<ol type = "1"><li>Prepare a communication plan:
+</li>
+    <ul type="disc"><li>Meet with your parish priest on an annual basis to identify specific needs of the parish and determine how the Knights can assist
+</li><li>Create a phone tree with contact information for all council members. Practice using this phone tree at least twice a year.
+</li><li>Know the disaster chain of command within your jurisdiction and the council’s role and responsibilities, including individual roles and responsibilities
+</li><li>Maintain contact lists of the parish's vulnerable community members (the elderly, disabled, and widow(er)s) to ensure that they are safe prior to a disaster or after a disaster has struck</li></ul>
+</li><li>Provide disaster safety and awareness training to council members and parish community. These trainings should include information on:
+</li><ul type="disc"><li>Fire safety
+</li><li>Disease control
+</li><li>Natural disaster awareness</li></ul>
+<li>Allocate at least $500 dollars in the council’s general funding account in case of a disaster
+</li></ol></p>
+            </div>
+       
+                          </div></div>
+                            
+                           
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
